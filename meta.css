@@ -1,0 +1,10 @@
+body{
+    font-family: "Nunito Sans", sans-serif;
+}
+main{
+    margin: 0 auto;
+}
+.firstPage{
+    display: grid;
+    grid-template-rows: 10% 90%;
+}
