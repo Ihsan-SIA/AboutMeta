@@ -1,6 +1,5 @@
 body {
     font-family: "Nunito Sans", sans-serif;
-    overflow: hidden;
 }
 
 main {
@@ -90,6 +89,7 @@ a {
     }
 footer{
     display: flex;
+    flex-direction: column;
     width: 100%;
     justify-content: center;
     margin: 0 auto;
@@ -97,6 +97,35 @@ footer{
         video{
             height: auto;
             width: 100vw;
+        }
+    }
+    .small{
+        display: flex;
+        flex-direction: column;
+        margin: 0 30%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        transform: translate(0, -75vh);
+        font-size: 1.45em;
+        button{
+            height: 45px;
+            width: 135px;
+            background-color: #0064E0;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: .7em;
+            color: white;
+            margin: 10px 0 0 0;
+            cursor: pointer;
+            border: none;
+        }
+        button:hover{
+            background-color: #0050B3;
+        }
+        h1{
+            font-weight: 500;
+            margin: 0;
         }
     }
 }
