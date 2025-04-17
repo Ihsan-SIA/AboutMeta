@@ -15,7 +15,9 @@ main {
 a {
     text-decoration: none;
 }
-
+.firstPage{
+    height: 100vh;
+}
 .fixedHead {
     width: 100vw;
     margin: 0;
@@ -112,7 +114,7 @@ a {
     }
 }
 
-footer {
+.down {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -160,10 +162,13 @@ footer {
     }
 }
 .secondPage{
+    margin: 25vh 0 0 0;
+    border: 2px solid black;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     .up{
-        border: 2px solid black;
+        height: 500px;
         display: flex;
         flex-direction: column;
         font-size: 2em;
