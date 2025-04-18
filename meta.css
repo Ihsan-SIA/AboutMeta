@@ -162,7 +162,7 @@ a {
     }
 }
 .secondPage{
-    margin: 25vh 0 0 0;
+    margin: 25vh 200px 0 200px;
     border: 2px solid black;
     height: 100vh;
     display: flex;
@@ -190,6 +190,16 @@ a {
         h1{
             margin: 25px 0;
             font-weight: 500;
+        }
+    }
+    .down{
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        gap: 50px;
+        border: 2px solid black;
+        div{
+            border: 2px solid black;
         }
     }
 }
