@@ -219,6 +219,10 @@ a {
                 height: 260px;
                 border: 2px solid black;
                 border-radius: 25px;
+                img{
+                    width: inherit;
+                    height: inherit;
+                }
             }
         }
     }
