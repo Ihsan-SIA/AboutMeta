@@ -205,24 +205,21 @@ a {
         flex-direction: row;
         margin: 0 auto;
         gap: 50px;
-        border: 2px solid black;
 
         div {
             width: 340px;
-            border: 2px solid blue;
             h1{
                 font-size: 1.1em;
                 font-weight: 400;
             }
             nav {
+                background-color: #F9FAFC;
                 width: 340px;
                 height: 260px;
-                border: 2px solid black;
                 border-radius: 25px;
-                img{
-                    width: inherit;
-                    height: inherit;
-                }
+            }
+            p{
+                font-weight: bold;
             }
         }
     }
