@@ -11,10 +11,24 @@ main {
     height: 100%;
     align-items: center;
 }
-.arright{
-    width: 20px;
-    height: auto;
+
+button {
+    background-color: #0064E0;
+    color: white;
+    cursor: pointer;
 }
+
+button:hover {
+    background-color: #0050B3;
+    color: white;
+
+}
+
+.arright {
+    width: 20px;
+    height: 20px;
+}
+
 a {
     text-decoration: none;
 }
@@ -147,11 +161,9 @@ a {
         button {
             height: 45px;
             width: 135px;
-            background-color: #0064E0;
             border-radius: 25px;
             font-weight: 600;
             font-size: .7em;
-            color: white;
             margin: 10px 0 0 0;
             cursor: pointer;
             border: none;
@@ -186,6 +198,7 @@ a {
             height: 45px;
             border-radius: 25px;
             background-color: white;
+            color: black;
             font-size: .5em;
             font-weight: 600;
             border: 1px solid lightgray;
@@ -211,6 +224,11 @@ a {
         div {
             width: 340px;
 
+            div {
+                display: flex;
+                align-items: center;
+            }
+
             h1 {
                 font-size: 1.1em;
                 font-weight: 400;
@@ -225,6 +243,7 @@ a {
 
             p {
                 font-weight: bold;
+                margin-left: 15px;
             }
         }
     }
@@ -270,6 +289,7 @@ a {
         justify-content: space-between;
 
         div {
+            margin: 0 auto;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -323,13 +343,66 @@ a {
             bottom: 100px;
         }
     }
-    .right{
-        nav{
+
+    .right {
+        nav {
             position: relative;
             bottom: 70px;
         }
     }
 }
-.fourthPage{
-    
+
+.fourthPage {
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid red;
+    display: flex;
+    position: relative;
+    top: 500px;
+
+    .up {
+        h1 {
+            font-size: 3em;
+            margin: 0 400px;
+            border: 2px solid blue;
+            font-weight: 300;
+            text-align: center;
+        }
+    }
+
+    .middle {
+        display: flex;
+        justify-self: center;
+        width: 450px;
+        justify-content: space-between;
+        align-items: center;
+        justify-content: space-between;
+        margin: 25px 0;
+
+        button {
+            width: 230px;
+            height: 45px;
+            border-radius: 25px;
+            border: none;
+            font-weight: 700;
+            font-size: 1.02em;
+        }
+
+        p {
+            font-weight: 700;
+        }
+    }
+
+    .down {
+        border: 2px solid rebeccapurple;
+        width: 1130px;
+        video {
+            width: 1130px;
+            height: 495px;
+        }
+    }
 }
