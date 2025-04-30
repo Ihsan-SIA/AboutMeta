@@ -42,11 +42,13 @@ a {
         height: 10%;
         width: 99%;
         header{
-            display: flex;
-            /* grid-template-columns: 1fr 1fr; */
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            border: 2px solid red;
             height: 100%;
             max-width: 100%;
             button{
+                background-color: #E4E3E4;
                 background-color: white;
                 color: black;
                 height: 45%;
@@ -57,17 +59,19 @@ a {
             button:hover{
                 background-color: #E4E3E4;
             }
+            img{
+                height: 20px;
+                width: auto;
+            }
             div{
                 border: 2px solid blue;
             }
             .left{
-                width: 50%;
                 display: flex;
                 align-items: center;
-                
-            }
-            .right{
-                width: 50%;
+                padding-right: 40%;
+                padding-left: 5%;
+                justify-content: space-between;
             }
         }
     }
