@@ -36,17 +36,20 @@ a {
 
 .firstPage {
     height: 100vh;
+    
     box{
+        display: flex;
         position: fixed;
+        justify-content: center;
         background-color: white;
         height: 10%;
-        width: 99%;
+        width: 100%;
         header{
             display: grid;
             grid-template-columns: 1fr 1fr;
             border: 2px solid red;
             height: 100%;
-            max-width: 100%;
+            width: 100em;
             button{
                 background-color: #E4E3E4;
                 background-color: white;
@@ -68,12 +71,26 @@ a {
             }
             .left{
                 display: flex;
-                align-items: center;
                 padding-right: 40%;
                 padding-left: 5%;
                 justify-content: space-between;
+                align-items: center;
+            }
+            .right{
+                display: flex;
+                padding-right: 5%;
+                padding-left: 60%;
+                justify-content: space-between;
+                align-items: center;
             }
         }
+    }
+    footer{
+     border: 2px solid slateblue;
+     background-color: orange;
+     width: 100%;
+     height: 90%;
+     margin-top: 10vh;
     }
     
 }
