@@ -97,6 +97,8 @@ a {
         overflow: hidden;
         h1{
             object-fit: cover;
+            position: relative;
+            z-index: 200;
         }
         video {
             width: 100vw;
