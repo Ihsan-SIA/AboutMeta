@@ -332,8 +332,8 @@ a {
         width: 1130px;
 
         video {
-            width: 1130px;
-            height: 495px;
+            width: 100%;
+            height: auto;
         }
     }
 }
