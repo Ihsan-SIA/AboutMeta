@@ -40,6 +40,7 @@ a {
     box {
         display: flex;
         position: fixed;
+        z-index: 100;
         justify-content: center;
         background-color: white;
         height: 10%;
@@ -314,9 +315,15 @@ a {
             font-weight: 700;
             font-size: 1.02em;
         }
-
+        
         p {
+            display: flex;
             font-weight: 700;
+            cursor: pointer;
+            align-items: center;
+            img{
+                padding: 0 1em;
+            }
         }
     }
 
