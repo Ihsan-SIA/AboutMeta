@@ -100,8 +100,11 @@ a {
         position: relative;
         overflow: hidden;
         h1{
-            object-fit: cover;
+            padding: 0 30%;
+            text-align: center;
             position: relative;
+            font-size: 3em;
+            font-weight: 500;
         }
         button{
             position: relative;
