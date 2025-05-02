@@ -230,12 +230,16 @@ a {
     }
 
     .middle {
-        border: 2px solid saddlebrown;
         width: 90em;
         display: flex;
 
         .images{
             height: 680px;
+        }
+        nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         div {
             margin: 0 auto;
@@ -245,15 +249,15 @@ a {
             text-align: center;
 
             h1 {
-                font-size: 2.1em;
-                font-weight: 30%;
-                padding: 0 30%;
+                font-size: 2.2em;
+                font-weight: 300/;
+                padding: 0 15%;
                 margin: 0;
             }
 
             p {
                 color: rgb(64, 64, 64);
-                margin: 25px 220px;
+                padding: .5% 23%;
             }
 
             button {
@@ -269,12 +273,7 @@ a {
             }
         }
 
-        nav {
-            border: 2px solid red;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+        
     }
 }
 
@@ -285,7 +284,6 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 2px solid red;
     display: flex;
     position: relative;
     top: 500px;
@@ -295,7 +293,6 @@ a {
             font-size: 3em;
             padding: 0 400px;
             line-height: 95%;
-            /* border: 2px solid blue; */
             font-weight: 500;
             text-align: center;
         }
