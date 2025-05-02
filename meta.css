@@ -133,6 +133,8 @@ a {
 
 @media screen and (max-width: 480px) {
     .firstPage {
+        box-sizing: border-box;
+        flex-wrap: wrap;
         width: 100vw;
         height: 100vh;
 
@@ -143,30 +145,80 @@ a {
         .mobile {
             height: 100%;
             width: 100%;
-            display: grid;
-            grid-template-rows: 10% 90%;
+            display: flex;
+            flex-direction: column;
 
             .up {
-                border: 2px solid red;
-                padding: 2% 5%;
-                width: 100%;
+                height: 10vh;
+                width: 100vw;
+                padding: 0 5%;
+                box-sizing: border-box;
+                background-color: rgba(255, 255, 255, 0.889);
+                backdrop-filter: blur(10px);
+                position: fixed;
                 display: flex;
                 justify-content: space-between;
+                align-items: center;
+                z-index: 10;
+
+                .meta {
+                    height: .8em;
+                }
 
                 img {
-                    height: 25px;
+                    height: 1.5em;
                     width: auto;
+                    cursor: pointer;
+                }
+
+                .left {
+                    display: flex;
+                    align-items: center;
+                    padding-right: 5%;
+                    gap: 20%;
                 }
             }
-            .down{
-                border: 2px solid blue;
+
+            .down {
+                position: relative;
+                height: 90vh;
+                margin-top: 10vh;
+
+                video {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                nav {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    position: absolute;
+                    top: 30%;
+
+                    h1 {
+                        margin: 0;
+                        font-size: 2.2em;
+                        font-weight: 600;
+                        padding: 3% 20%;
+                        line-height: 1.2em;
+                        text-align: center;
+                    }
+
+                    button {
+                        height: 40px;
+                        width: 130px;
+                        border-radius: 25px;
+                        border: none;
+                        font-size: 1em;
+                        font-weight: 700;
+                    }
+                }
             }
         }
     }
 }
-
-
-
 
 .secondPage {
     margin: 25vh 200px 0 200px;
@@ -236,6 +288,65 @@ a {
         }
     }
 }
+
+@media screen and (max-width:480px) {
+    .secondPage {
+        display: none;
+    }
+
+    .mobileSecondPage {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+        box-sizing: border-box;
+
+        .up {
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            padding: 0 20%;
+            align-items: center;
+            justify-content: center;
+
+            h1 {
+                text-align: center;
+                font-size: 2em;
+                line-height: 120%;
+                font-weight: 600;
+            }
+            button{
+                height: 18%;
+                width: 90%;
+                border-radius: 25px;
+                border: 1px solid lightgray;
+                background-color: inherit;
+                color: black;
+                font-size: .95em;
+                font-weight: 600;
+            }
+        }
+
+        .down {
+            border: 2px solid black;
+            display: flex;
+            gap: 10%;
+            overflow-x: auto;
+
+            h1 {
+                font-size: .9em;
+                font-weight: 400;
+            }
+        }
+
+        nav {
+            width: 250px;
+            height: 200px;
+            border-radius: 25px;
+        }
+    }
+}
+
 
 .thirdPage {
     margin: 0 auto;
