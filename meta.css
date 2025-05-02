@@ -230,11 +230,13 @@ a {
     }
 
     .middle {
-        width: 90vw;
+        border: 2px solid saddlebrown;
+        width: 90em;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
 
+        .images{
+            height: 680px;
+        }
         div {
             margin: 0 auto;
             display: flex;
@@ -244,8 +246,9 @@ a {
 
             h1 {
                 font-size: 2.1em;
-                font-weight: 500;
-                margin: 0 200px;
+                font-weight: 30%;
+                padding: 0 30%;
+                margin: 0;
             }
 
             p {
@@ -267,18 +270,10 @@ a {
         }
 
         nav {
+            border: 2px solid red;
             display: flex;
             flex-direction: column;
             align-items: center;
-        }
-    }
-
-    
-
-    .right {
-        nav {
-            position: relative;
-            bottom: 70px;
         }
     }
 }
