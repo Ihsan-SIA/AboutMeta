@@ -33,7 +33,9 @@ button:hover {
 a {
     text-decoration: none;
 }
-
+.mobile{
+    display: none;
+}
 .firstPage {
     height: 100vh;
 
@@ -130,6 +132,7 @@ a {
         }
     }
 }
+
 
 @media screen and (max-width: 480px) {
     .firstPage {
@@ -356,9 +359,11 @@ a {
         }
     }
 }
+.thirdPageMobile{
+    display: none;
+}
 
-
-.thirdPage {
+.thirdPageWeb {
     margin: 0 auto;
     height: 100vh;
     display: flex;
@@ -441,6 +446,17 @@ a {
     }
 }
 
+@media screen and (max-width: 480px){
+    .thirdPageWeb{
+        display: none;
+    }
+    .thirdPageMobile{
+        display: flex;
+        flex-direction: column;
+        height: 200vh;
+
+    }
+}
 .fourthPage {
     margin: 0 auto;
     height: 120vh;
