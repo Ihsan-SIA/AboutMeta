@@ -133,18 +133,17 @@ a {
 
 @media screen and (max-width: 480px) {
     .firstPage {
-        box-sizing: border-box;
-        flex-wrap: wrap;
-        width: 100vw;
-        height: 100vh;
+
 
         .webView {
             display: none;
         }
 
         .mobile {
-            height: 100%;
-            width: 100%;
+            box-sizing: border-box;
+            flex-wrap: wrap;
+            width: 100vw;
+            height: 100vh;
             display: flex;
             flex-direction: column;
 
@@ -219,9 +218,11 @@ a {
         }
     }
 }
-.mobileSecondPage{
+
+.mobileSecondPage {
     display: none;
 }
+
 .secondPage {
     margin: 25vh 200px 0 200px;
     height: 100vh;
@@ -317,7 +318,8 @@ a {
                 line-height: 120%;
                 font-weight: 600;
             }
-            button{
+
+            button {
                 height: 10%;
                 width: 90%;
                 border-radius: 25px;
@@ -334,12 +336,14 @@ a {
             grid-template-columns: 1fr 1fr 1fr;
             gap: 5%;
             overflow-x: auto;
+
             h1 {
                 font-size: .9em;
                 font-weight: 400;
                 margin: 0;
             }
-            p{
+
+            p {
                 margin: 0;
             }
         }
