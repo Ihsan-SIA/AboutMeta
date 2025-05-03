@@ -219,7 +219,9 @@ a {
         }
     }
 }
-
+.mobileSecondPage{
+    display: none;
+}
 .secondPage {
     margin: 25vh 200px 0 200px;
     height: 100vh;
