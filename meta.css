@@ -594,5 +594,46 @@ a {
         .fourthPageWeb{
         display: none;
         }
+        .fourthPageMobile{
+            height: 100vh;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0 5%;
+            /* border: 2px solid red; */
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            .up{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                h1{
+                    padding: 0 5%;
+                    font-size: 2em;
+                    line-height: 110%;
+                    font-weight: 500;
+                }
+                p{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    font-weight: 700;
+                }
+                button{
+                    width: 250px;
+                    border: none;
+                    height: 40px;
+                    border-radius: 25px;
+                    font-size: 15px;
+                    font-weight: 700;
+                }
+            }
+            .down{
+                video{
+                    width: 250px;
+                }
+            }
+        }
     }
 }
